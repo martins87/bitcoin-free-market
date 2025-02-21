@@ -11,7 +11,7 @@ type TrendingProps = {
 const Trending: FC<TrendingProps> = ({ title, listing }) => {
   return (
     <div className="w-full flex flex-col gap-y-6">
-      <span className="font-[family-name:var(--font-sora)] text-[40px] text-header bg-white">
+      <span className="font-[family-name:var(--font-sora)] text-[40px] text-black/80 bg-white">
         {title}
       </span>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
