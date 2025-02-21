@@ -24,6 +24,10 @@ export default {
         "spin-till-100-million-usd":
           "spin-till-100-million-usd 1.75s linear infinite",
       },
+      screens: {
+        mobile: "512px",
+        tablet: "960px",
+      },
     },
   },
   plugins: [tailwindcssAnimate],

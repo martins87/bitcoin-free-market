@@ -33,8 +33,8 @@ const UserAccountMenu: FC = () => {
     <div className={twMerge("absolute right-6")}>
       {isLoggedIn ? (
         <Image
-          width={52}
-          height={52}
+          width={56}
+          height={56}
           className="rounded-full"
           src={profileImage}
           alt="Profile img"
