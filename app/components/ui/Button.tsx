@@ -33,7 +33,7 @@ const Button: FC<ButtonProps> = ({
       )}
       onClick={onClick}
     >
-      {icon && <Image src={icon} alt="button icon" />}
+      {icon && <Image width={32} height={32} src={icon} alt="button icon" />}
       <span
         className={twMerge(
           "font-[family-name:var(--font-sora)] text-base font-semibold tracking-wide",

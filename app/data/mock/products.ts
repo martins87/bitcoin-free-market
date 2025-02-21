@@ -123,25 +123,25 @@ export const autos: Product[] = [
 
 export const xbox = {
   id: "982cb238-61af-4e0b-a051-2ddb1d6eafbe", // https://www.uuidgenerator.net/version4
-  title: "Controle Xbox",
-  listingDate: "03/12/2024 às 15:30",
+  title: "Xbox Controller",
+  listingDate: "02/21/2025 at 15:30",
   price: "0.0017",
   images: [XboxController1, XboxController2, XboxController3, XboxController4],
   description:
-    "Experimente o design modernizado do Controle sem Fio Xbox, com superfícies esculpidas e geometria refinada para melhorar o conforto durante os jogos. Permaneça no alvo com o gatilho texturizado e botões direcionais híbridos. Capture e compartilhe conteúdo de forma simples com um botão Share dedicado. Emparelhe, jogue e alterne rapidamente entre dispositivos, incluindo Xbox Series X|S, Xbox One,PC Windows, Android e iOS*",
+    "Experience the modernized design of the Xbox Wireless Controller, featuring sculpted surfaces and refined geometry for enhanced gaming comfort. Stay on target with the textured trigger and hybrid directional buttons. Easily capture and share content with a dedicated Share button. Pair, play, and quickly switch between devices, including Xbox Series X|S, Xbox One, Windows PC, Android, and iOS*",
   details: [
-    "Conecte-se aos consoles Xbox com o Xbox sem Fio. Conecte-se sem fio a PCs Windows 10/11, tablets, iOS e Android usando Bluetooth.*",
-    "Compatível com Xbox Series X, Xbox Series S, Xbox One, Windows 10/11, Android e iOS.*",
-    "Pilhas AA para até 40 horas de duração***",
-    "Capture e compartilhe com facilidade conteúdo como capturas de tela, gravações e mais com o novo botão Share.",
-    "Gatilhos e botões texturizados | Botões direcionais híbridos | Mapeamento de botões | Tecnologia Bluetooth®",
-    "Jogue sem fio ou use o cabo USB-C de 2,7m incluído para uma experiência de jogo com fio",
+    "Connect to Xbox consoles with Xbox Wireless. Connect wirelessly to Windows 10/11 PCs, tablets, iOS, and Android using Bluetooth.*",
+    "Compatible with Xbox Series X, Xbox Series S, Xbox One, Windows 10/11, Android, and iOS.*",
+    "AA batteries for up to 40 hours of battery life***",
+    "Easily capture and share content like screenshots, recordings, and more with the new Share button.",
+    "Textured triggers and buttons | Hybrid directional buttons | Button mapping | Bluetooth® technology",
+    "Play wirelessly or use the included 9ft USB-C cable for a wired gaming experience",
   ],
   features: [
-    "Modelo: Xbox Series",
-    "Cor: Branca",
-    "Peso: 470g",
-    "Marca: Microsoft",
-    "Categoria: Eletrônicos",
+    "Model: Xbox Series",
+    "Color: White",
+    "Weight: 470g",
+    "Brand: Microsoft",
+    "Category: Electronics",
   ],
 };
