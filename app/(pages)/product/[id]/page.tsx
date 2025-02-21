@@ -6,8 +6,8 @@ import { xbox } from "@/app/data/mock/products";
 
 const Product = () => {
   return (
-    <Container className="flex flex-col gap-y-20 mt-20">
-      <div className="w-full flex items-start gap-x-32">
+    <Container className="flex flex-col gap-y-20 mt-2 md:mt-20">
+      <div className="w-full flex flex-col md:flex-row items-start gap-x-20 xl:gap-x-32">
         <ProductImages images={xbox.images} />
         <ProductMainInfo
           title={xbox.title}

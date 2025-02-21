@@ -18,7 +18,7 @@ const ProductMainInfo: FC<ProductMainInfoProps> = ({
   listingDate,
 }) => {
   return (
-    <div className="w-full h-full flex flex-col gap-y-8">
+    <div className="w-full h-full flex flex-col gap-y-8 mt-16 md:mt-0">
       <span className="font-[family-name:var(--font-inter)] text-base text-black/30">
         Publish Date: {listingDate}
       </span>
