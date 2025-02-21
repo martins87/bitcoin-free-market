@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 
 import Navbar from "./components/Navbar";
 import AuthSessionProvider from "./components/AuthSessionProvider";
+import Footer from "./components/Footer";
 import "./globals.css";
 
 const sora = localFont({
@@ -49,6 +50,7 @@ export default function RootLayout({
         <body className={`${sora.variable} ${inter.variable} antialiased`}>
           <Navbar />
           {children}
+          <Footer />
         </body>
       </html>
     </AuthSessionProvider>
