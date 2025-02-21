@@ -2,7 +2,7 @@ import BTCSymbol from "../BTCSymbol";
 
 const Hero = () => {
   return (
-    <div className="w-full h-[30vh] flex flex-col items-center justify-center gap-y-12 -mb-28">
+    <div className="w-full h-[30vh] hidden sm:flex flex-col items-center justify-center gap-y-12 -mb-28">
       <div className="flex flex-col">
         <div className="w-fit flex items-center justify-around gap-x-4 mx-auto">
           <span className="flex items-center gap-x-2 font-[family-name:var(--font-sora)] text-5xl tablet:text-6xl 2xl:text-[80px] text-black/80">

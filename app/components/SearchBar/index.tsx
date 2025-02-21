@@ -21,7 +21,7 @@ const SearchBar: FC = () => {
   };
 
   return (
-    <div className="w-[45%] tablet:w-[35%] mx-auto flex items-center gap-x-4 px-5 py-[10px] border border-[#7780A1] rounded-xl text-[#343333]/80 bg-inherit">
+    <div className="w-[45%] tablet:w-[35%] mx-auto hidden sm:flex items-center gap-x-4 px-5 py-[10px] border border-[#7780A1] rounded-xl text-[#343333]/80 bg-inherit">
       <Image
         className="hover:cursor-pointer"
         src={Search}

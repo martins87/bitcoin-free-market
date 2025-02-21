@@ -22,7 +22,7 @@ export const trendingProducts: Product[] = [
     userName: "Nick Szabo",
     avatar: Nick,
     productImg: Laptop,
-    productTitle: "Laptop do Nick",
+    productTitle: "Nick's Laptop",
     value: "0.0051",
   },
   {
@@ -30,7 +30,7 @@ export const trendingProducts: Product[] = [
     userName: "Hal Finney",
     avatar: Hal,
     productImg: Motorcycle1,
-    productTitle: "Motoca do Hal",
+    productTitle: "Hal's motorbike",
     value: "0.084",
   },
   {
@@ -38,7 +38,7 @@ export const trendingProducts: Product[] = [
     userName: "Adam Back",
     avatar: Adam,
     productImg: Car1,
-    productTitle: "Caranga do Adam",
+    productTitle: "Adam's ride",
     value: "0.067",
   },
   {
@@ -46,7 +46,7 @@ export const trendingProducts: Product[] = [
     userName: "Satoshi Nakamoto",
     avatar: Nick,
     productImg: House,
-    productTitle: "Mansão do Naka",
+    productTitle: "Naka's Mansion",
     value: "8.43",
   },
 ];
@@ -57,7 +57,7 @@ export const electronics: Product[] = [
     userName: "Nick Szabo",
     avatar: Nick,
     productImg: Laptop,
-    productTitle: "Laptop do Nick",
+    productTitle: "Nick's Laptop",
     value: "0.0005",
   },
   {
@@ -108,7 +108,7 @@ export const autos: Product[] = [
     userName: "Adam Back",
     avatar: Adam,
     productImg: Car1,
-    productTitle: "Carango do Adam",
+    productTitle: "Adam's ride",
     value: "0.0005",
   },
   {
@@ -126,13 +126,9 @@ export const xbox = {
   title: "Controle Xbox",
   listingDate: "03/12/2024 às 15:30",
   price: "0.0017",
-  images: [
-    XboxController1,
-    XboxController2,
-    XboxController3,
-    XboxController4,
-  ],
-  description: "Experimente o design modernizado do Controle sem Fio Xbox, com superfícies esculpidas e geometria refinada para melhorar o conforto durante os jogos. Permaneça no alvo com o gatilho texturizado e botões direcionais híbridos. Capture e compartilhe conteúdo de forma simples com um botão Share dedicado. Emparelhe, jogue e alterne rapidamente entre dispositivos, incluindo Xbox Series X|S, Xbox One,PC Windows, Android e iOS*",
+  images: [XboxController1, XboxController2, XboxController3, XboxController4],
+  description:
+    "Experimente o design modernizado do Controle sem Fio Xbox, com superfícies esculpidas e geometria refinada para melhorar o conforto durante os jogos. Permaneça no alvo com o gatilho texturizado e botões direcionais híbridos. Capture e compartilhe conteúdo de forma simples com um botão Share dedicado. Emparelhe, jogue e alterne rapidamente entre dispositivos, incluindo Xbox Series X|S, Xbox One,PC Windows, Android e iOS*",
   details: [
     "Conecte-se aos consoles Xbox com o Xbox sem Fio. Conecte-se sem fio a PCs Windows 10/11, tablets, iOS e Android usando Bluetooth.*",
     "Compatível com Xbox Series X, Xbox Series S, Xbox One, Windows 10/11, Android e iOS.*",
@@ -147,5 +143,5 @@ export const xbox = {
     "Peso: 470g",
     "Marca: Microsoft",
     "Categoria: Eletrônicos",
-  ]
-}
+  ],
+};

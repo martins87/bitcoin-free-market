@@ -8,9 +8,9 @@ export default function Home() {
     <main>
       <Container className="flex flex-col gap-y-32">
         <Hero />
-        <Trending title="Mais populares" listing={trendingProducts} />
-        <Trending title="Populares em Eletrônicos" listing={electronics} />
-        <Trending title="Populares em Automóveis" listing={autos} />
+        <Trending title="Trending" listing={trendingProducts} />
+        <Trending title="Trending in Electronics" listing={electronics} />
+        <Trending title="Trending in Auto" listing={autos} />
       </Container>
     </main>
   );

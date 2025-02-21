@@ -55,7 +55,7 @@ const TrendingCard: FC<TrendingCardProps> = ({
           </div>
           <div className="flex items-center justify-between gap-x-1">
             <span className="font-[family-name:var(--font-inter)] font-normal text-lg text-[#7780A1]/20 group-hover:text-[#F7931A] group-hover:drop-shadow-2xl transition-all duration-500">
-              {`Ver mais ->`}
+              {`See more ->`}
             </span>
           </div>
         </div>
