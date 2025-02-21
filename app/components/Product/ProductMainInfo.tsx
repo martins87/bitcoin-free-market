@@ -27,7 +27,7 @@ const ProductMainInfo: FC<ProductMainInfoProps> = ({
       </span>
       <div className="flex items-center justify-start gap-x-2">
         <BTCSymbol className="w-10" />
-        <span className="font-[family-name:var(--font-inter)] text-3xl font-bold text-button_background tracking-wide">
+        <span className="font-[family-name:var(--font-inter)] text-3xl font-bold text-[#F7931A] tracking-wide">
           {price}
         </span>
       </div>
