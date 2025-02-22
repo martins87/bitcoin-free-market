@@ -13,14 +13,15 @@ type AdProps = {
   title: string;
   price: string;
   status: "active" | "waiting";
+  onClick?: () => void;
 };
 
-const Ad: FC<AdProps> = ({ img, title, price, status }) => {
+const Ad: FC<AdProps> = ({ img, title, price, status, onClick }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Example invoice data
   const invoiceData = {
-    amount: "0.00001 BTC",
+    amount: "0.00000001 BTC",
   };
 
   return (
@@ -71,6 +72,7 @@ const Ad: FC<AdProps> = ({ img, title, price, status }) => {
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
         invoiceAmount={invoiceData.amount}
+        onClick={onClick!}
       />
     </>
   );

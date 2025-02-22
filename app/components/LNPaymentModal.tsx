@@ -13,6 +13,7 @@ interface LNPaymentModalProps {
   isOpen: boolean;
   onClose: () => void;
   invoiceAmount: string;
+  onClick: () => void;
 }
 
 type PaymentStatus = "idle" | "processing" | "success" | "error";
@@ -21,6 +22,7 @@ export default function LNPaymentModal({
   isOpen,
   onClose,
   invoiceAmount,
+  onClick,
 }: LNPaymentModalProps) {
   const [paymentStatus, setPaymentStatus] = useState<PaymentStatus>("idle");
 
@@ -48,6 +50,8 @@ export default function LNPaymentModal({
       setPaymentStatus("success");
       console.error(error);
     }
+
+    onClick();
   };
 
   const statusMessages = {
