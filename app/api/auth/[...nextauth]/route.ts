@@ -2,6 +2,8 @@ import { NextAuthOptions } from "next-auth";
 import NextAuth from "next-auth/next";
 import GoogleProvider from "next-auth/providers/google";
 
+import { addUser, getUserByEmail } from "@/app/lib/db";
+
 const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID!;
 const GOOGLE_CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET!;
 
@@ -30,6 +32,15 @@ const authOptions: NextAuthOptions = {
       }
       */
       console.log("profile:", profile);
+      // fetch user by email
+      const userEmail = profile.email;
+      const user = await getUserByEmail(userEmail);
+      if (user) {
+        console.log("user found:", user);
+      } else {
+        console.log("user not found:", user);
+        await addUser(profile.name!, profile.email);
+      }
 
       return true;
     },

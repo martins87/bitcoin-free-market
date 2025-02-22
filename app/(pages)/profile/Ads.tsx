@@ -5,9 +5,14 @@ import Button from "@/app/components/ui/Button";
 import Centered from "@/app/components/ui/Centered";
 import BitAxe from "../../assets/images/mock/products/bitaxe-gamma.jpeg";
 import NerdMiner from "../../assets/images/mock/products/nerdminer.png";
-import { useState } from "react";
+import { Dispatch, FC, useState } from "react";
+import { Page } from "./page";
 
-const AdsPage = () => {
+type AdsPageProps = {
+  setPage: Dispatch<React.SetStateAction<Page>>;
+};
+
+const AdsPage: FC<AdsPageProps> = ({ setPage }) => {
   const [statusAd2, setStatusAd2] = useState<"active" | "waiting">("waiting");
 
   return (
@@ -25,7 +30,7 @@ const AdsPage = () => {
         status={statusAd2}
         onClick={() => setStatusAd2("active")}
       />
-      <Button label="Create ad" primary />
+      <Button label="Create ad" onClick={() => setPage("create")} primary />
     </Centered>
   );
 };

@@ -7,8 +7,9 @@ import Centered from "@/app/components/ui/Centered";
 import Container from "@/app/components/ui/Container";
 import ContactPage from "./Contacts";
 import AdsPage from "./Ads";
+import CreatePage from "./Create";
 
-export type Page = "ads" | "contacts";
+export type Page = "ads" | "contacts" | "create";
 
 const ProfilePage = () => {
   const [page, setPage] = useState<Page>("ads");
@@ -17,8 +18,9 @@ const ProfilePage = () => {
     <Container className="flex flex-col gap-y-4 mt-2 md:mt-20">
       <Header setPage={setPage} />
       <Centered className="">
-        {page === "ads" && <AdsPage />}
+        {page === "ads" && <AdsPage setPage={setPage} />}
         {page === "contacts" && <ContactPage />}
+        {page === "create" && <CreatePage />}
       </Centered>
     </Container>
   );
