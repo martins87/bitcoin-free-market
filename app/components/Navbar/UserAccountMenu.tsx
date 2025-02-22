@@ -2,13 +2,12 @@
 
 import { FC, useEffect, useState } from "react";
 import Image from "next/image";
-import { twMerge } from "tailwind-merge";
 import { redirect } from "next/navigation";
 import { useSession } from "next-auth/react";
 
 import Button from "../ui/Button";
 import Link from "next/link";
-// import UserPicture from "../../assets/images/ross-ulbricht.png";
+import { BitcoinConnectClientWrapper } from "../BitcoinConnectClientWrapper";
 
 const UserAccountMenu: FC = () => {
   const { data: session, status } = useSession();
@@ -30,7 +29,8 @@ const UserAccountMenu: FC = () => {
   const handleClick = () => redirect("/api/auth/signin/");
 
   return (
-    <div className={twMerge("absolute right-6")}>
+    <div className="absolute right-6 flex items-center gap-x-4">
+      <BitcoinConnectClientWrapper />
       {isLoggedIn ? (
         <Link href="/profile">
           <Image
@@ -44,12 +44,7 @@ const UserAccountMenu: FC = () => {
           />
         </Link>
       ) : (
-        <Button
-          label="Login"
-          // icon={Person}
-          primary
-          onClick={handleClick}
-        />
+        <Button label="Login" primary onClick={handleClick} />
       )}
     </div>
   );
