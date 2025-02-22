@@ -7,8 +7,18 @@ import NerdMiner from "../../assets/images/mock/products/nerdminer.png";
 const AdsPage = () => {
   return (
     <Centered className="gap-y-4" direction="col">
-      <Ad title="Bitaxe Gamma, BM1370, 1,2 TH/s" price="0.0005" img={BitAxe} />
-      <Ad title="NerdMiner3.0 BTC Miner" price="0.0005" img={NerdMiner} />
+      <Ad
+        title="Bitaxe Gamma, BM1370, 1,2 TH/s"
+        price="0.0005"
+        img={BitAxe}
+        status="active"
+      />
+      <Ad
+        title="NerdMiner3.0 BTC Miner"
+        price="0.0005"
+        img={NerdMiner}
+        status="waiting"
+      />
       <Button label="Create ad" primary />
     </Centered>
   );

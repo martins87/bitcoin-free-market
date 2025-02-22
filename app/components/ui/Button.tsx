@@ -1,10 +1,10 @@
-import { FC } from "react";
+import { FC, ReactNode } from "react";
 import Image from "next/image";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import { twMerge } from "tailwind-merge";
 
 type ButtonProps = {
-  label: string;
+  label: string | ReactNode;
   primary?: boolean;
   secondary?: boolean;
   className?: string;
