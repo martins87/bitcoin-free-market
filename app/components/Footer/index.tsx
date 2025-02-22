@@ -9,11 +9,11 @@ const Footer = () => {
         <div className="absolute left-6">
           <Logo />
         </div>
-        <span className="hidden md:flex font-[family-name:var(--font-inter)] text-sm text-black/50">
+        <span className="hidden md:flex font-[family-name:var(--font-inter)] text-base text-black/50">
           Bitcoin is better than gold.
         </span>
         <div className="absolute right-6 flex gap-x-6">
-          <Button label="Create an ad" primary />
+          <Button label="Create ad" primary />
         </div>
       </footer>
     </Container>

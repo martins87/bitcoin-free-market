@@ -7,7 +7,7 @@ import { redirect } from "next/navigation";
 import { useSession } from "next-auth/react";
 
 import Button from "../ui/Button";
-import Person from "../../assets/icons/person.svg";
+import Link from "next/link";
 // import UserPicture from "../../assets/images/ross-ulbricht.png";
 
 const UserAccountMenu: FC = () => {
@@ -32,17 +32,24 @@ const UserAccountMenu: FC = () => {
   return (
     <div className={twMerge("absolute right-6")}>
       {isLoggedIn ? (
-        <Image
-          width={56}
-          height={56}
-          className="rounded-full"
-          src={profileImage}
-          alt="Profile img"
-          // priority
-          // unoptimized={typeof profileImage === "string"}
-        />
+        <Link href="/profile">
+          <Image
+            width={56}
+            height={56}
+            className="rounded-full"
+            src={profileImage}
+            alt="Profile img"
+            // priority
+            // unoptimized={typeof profileImage === "string"}
+          />
+        </Link>
       ) : (
-        <Button label="Login" icon={Person} primary onClick={handleClick} />
+        <Button
+          label="Login"
+          // icon={Person}
+          primary
+          onClick={handleClick}
+        />
       )}
     </div>
   );

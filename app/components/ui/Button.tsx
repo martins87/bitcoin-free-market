@@ -25,9 +25,9 @@ const Button: FC<ButtonProps> = ({
       className={twMerge(
         "group flex items-center justify-center gap-x-3 px-5 py-3 rounded-2xl transition-all duration-300",
         primary
-          ? "bg-[#F7931A] hover:bg-[#F7931A]/80"
+          ? "bg-main_orange hover:bg-main_orange/80"
           : secondary
-          ? "bg-white border-2 border-[#F7931A] hover:bg-[#F7931A]/10"
+          ? "bg-white border-2 border-main_orange hover:bg-main_orange/10"
           : "",
         className
       )}
@@ -37,7 +37,7 @@ const Button: FC<ButtonProps> = ({
       <span
         className={twMerge(
           "font-[family-name:var(--font-sora)] text-base font-semibold tracking-wide",
-          primary ? "text-white" : secondary ? "text-[#F7931A]" : ""
+          primary ? "text-white" : secondary ? "text-main_orange" : ""
         )}
       >
         {label}

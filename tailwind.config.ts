@@ -12,6 +12,7 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        main_orange: "#F7931A",
       },
       keyframes: {
         "spin-till-100-million-usd": {
